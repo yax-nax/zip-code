@@ -13,7 +13,7 @@ const apiBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         axios: {
-          baseURL: 'https://zip-cloud.appspot.com'
+          baseURL: 'https://yax-nax.github.io/zip-code/'
         }
       }
     : { axios: {} }
@@ -69,7 +69,7 @@ module.exports = {
    */
   // apiBase,
   axios: {
-    baseURL: 'https://yax-nax.github.io/'
+    baseURL: 'https://yax-nax.github.io/zip-code/'
   },
   proxy: {
     '/zipcode-api': {
