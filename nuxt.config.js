@@ -13,7 +13,7 @@ const apiBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         axios: {
-          baseURL: 'https://zip-cloud.appspot.com/api/'
+          baseURL: 'https://zip-cloud.appspot.com'
         }
       }
     : { axios: {} }
