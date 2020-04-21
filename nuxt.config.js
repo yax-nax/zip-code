@@ -97,5 +97,5 @@ module.exports = {
      */
     extend(config, ctx) {}
   },
-  reouterBase
+  routerBase
 }
