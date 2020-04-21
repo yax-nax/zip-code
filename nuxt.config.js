@@ -13,7 +13,7 @@ const apiBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         axios: {
-          baseURL: 'https://yax-nax.github.io/zip-code/'
+          baseURL: 'https://yax-nax.github.io/'
         }
       }
     : { axios: {} }
@@ -67,13 +67,13 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  // apiBase,
-  axios: {
-    baseURL: '/zip-code/'
-  },
+  apiBase,
+  // axios: {
+  //   baseURL: '/zip-code/'
+  // },
   proxy: {
     '/zipcode-api': {
-      target: 'https://zip-cloud.appspot.com/api/',
+      target: 'https://zip-cloud.appspot.com',
       pathRewrite: {
         '^/zipcode-api': '/'
       }
@@ -109,8 +109,8 @@ module.exports = {
      */
     extend(config, ctx) {}
   },
-  router: {
-    base: '/zip-code/'
-  }
-  // routerBase
+  // router: {
+  //   base: '/zip-code/'
+  // }
+  routerBase
 }

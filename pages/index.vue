@@ -53,7 +53,7 @@ export default {
   methods: {
     async search() {
       await this.$axios
-        .$get('/zipcode-api/search?zipcode=' + this.zipcode)
+        .$get('/zipcode-api/api/search?zipcode=' + this.zipcode)
         .then((res) => {
           this.addressList = res.results
         })
