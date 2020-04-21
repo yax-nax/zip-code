@@ -67,7 +67,10 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  apiBase,
+  // apiBase,
+  axios: {
+    baseURL: 'https://zip-cloud.appspot.com/api/'
+  },
   proxy: {
     '/zipcode-api': {
       target: 'https://zip-cloud.appspot.com/api/',
@@ -109,5 +112,5 @@ module.exports = {
   router: {
     base: '/zip-code/'
   }
-  //routerBase
+  // routerBase
 }
