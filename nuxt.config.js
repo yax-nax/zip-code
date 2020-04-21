@@ -106,5 +106,8 @@ module.exports = {
      */
     extend(config, ctx) {}
   },
-  routerBase
+  router: {
+    base: '/zip-code/'
+  }
+  //routerBase
 }
