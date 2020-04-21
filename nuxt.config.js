@@ -69,7 +69,7 @@ module.exports = {
    */
   // apiBase,
   axios: {
-    baseURL: 'https://yax-nax.github.io/zip-code/'
+    baseURL: '/zip-code/'
   },
   proxy: {
     '/zipcode-api': {
