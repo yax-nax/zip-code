@@ -9,6 +9,15 @@ const routerBase =
       }
     : {}
 
+const apiBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        axios: {
+          baseURL: 'https://zip-cloud.appspot.com/api/'
+        }
+      }
+    : { axios: {} }
+
 module.exports = {
   mode: 'spa',
   /*
@@ -58,7 +67,7 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  apiBase,
   proxy: {
     '/zipcode-api': {
       target: 'https://zip-cloud.appspot.com/api/',
