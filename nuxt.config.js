@@ -69,7 +69,7 @@ module.exports = {
    */
   // apiBase,
   axios: {
-    baseURL: 'https://zip-cloud.appspot.com/api/'
+    baseURL: 'https://zip-cloud.appspot.com/'
   },
   proxy: {
     '/zipcode-api': {
